@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    agent { docker { image 'python:3.9' } }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
     }
